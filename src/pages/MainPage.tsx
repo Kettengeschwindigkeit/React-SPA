@@ -18,6 +18,8 @@ export function MainPage() {
         <div className="container max-w-[760px] mx-auto pt-5">
             <AirportSearch />
             <AirportFilter />
+            {loading && <p className='text-center text-lg'>Loading...</p>}
+            {error && <p className='text-center text-lg text-red-600'>{error}</p>}
             {airports.map(airport => <AirportCard key={airport.id} airport={airport} />)}
         </div>
     )
