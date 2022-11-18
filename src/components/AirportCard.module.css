@@ -1,0 +1,4 @@
+
+.card {
+    @apply mb-2 px-6 py-4 border rounded-md hover:shadow-md hover:transition-all cursor-pointer
+}
