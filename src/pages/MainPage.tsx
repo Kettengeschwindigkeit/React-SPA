@@ -31,7 +31,7 @@ export function MainPage() {
             {loading && <p className='text-center text-lg'>Loading...</p>}
             {error && <p className='text-center text-lg text-red-600'>{error}</p>}
             {airports.map(airport => <AirportCard key={airport.id} airport={airport} />)}
-            <ReactPaginate
+            {pageCount && <ReactPaginate
                 breakLabel="..."
                 nextLabel=">"
                 onPageChange={pageChangeHandler}
@@ -44,7 +44,7 @@ export function MainPage() {
                 previousClassName='mr-2 px-2 py-1 border'
                 nextClassName='px-2 py-1 border'
                 activeClassName='text-white bg-gray-500'
-            />
+            />}
         </div>
     )
 }
