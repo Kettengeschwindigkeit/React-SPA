@@ -25,3 +25,18 @@ export interface IFilter {
     region: IAirportRegion
     country: IAirportCountry
 }
+
+export interface IAirportDetail {
+    continent: string
+    coordinates: string
+    country: string
+    elevation_fit: string
+    gps_code: string
+    iata_code: string
+    ident: string
+    local_code: string
+    municipality: string
+    name: string
+    region: string
+    type: string
+}
